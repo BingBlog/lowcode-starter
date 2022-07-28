@@ -1,6 +1,10 @@
-# React Webpack Typescript Starter
+# Ali Lowcode Engine with React Webpack Typescript Starter
 > Minimal starter with hot module replacement (HMR) for rapid development.
+## Ali Lowcode Engine and formily lowcode material
+* **[Ali Lowcode Engine](https://lowcode-engine.cn/)**
+* **[formily lowcode](https://github.com/seada-low-code/lowcode-ecology)**
 
+## React Webpack Typescript
 * **[React](https://facebook.github.io/react/)** (18.x)
 * **[Webpack](https://webpack.js.org/)** (5.x)
 * **[Typescript](https://www.typescriptlang.org/)** (4.x)
@@ -13,15 +17,17 @@
 
 ## Installation
 1. Clone/download repo
-2. `yarn install` (or `npm install` for npm)
+2. `yarn install`
 
 ## Usage
 **Development**
 
-`yarn run start-dev`
+`yarn run start`
 
 * Build app continuously (HMR enabled)
-* App served @ `http://localhost:8080`
+* Designer page served @ `http://localhost:8080`
+* Preview page served @ `http://localhost:8080/preview.html`
+* List page served @ `http://localhost:8080/list.html`
 
 **Production**
 

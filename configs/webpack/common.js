@@ -97,7 +97,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "designer.html",
+      filename: "index.html",
       template: "public/index.html.ejs",
       chunks: ["designer"],
     }),

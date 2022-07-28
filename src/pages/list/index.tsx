@@ -1,8 +1,11 @@
-import "antd/dist/antd.css";
 import React from "react";
+import { createRoot } from "react-dom/client";
+import "antd/dist/antd.css";
 
-const Designer: React.FC = () => {
+const Page: React.FC = () => {
   return <div>list</div>;
 };
 
-export default Designer;
+const container = document.getElementById("root");
+const root = createRoot(container!);
+root.render(<Page />);
