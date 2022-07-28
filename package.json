@@ -16,12 +16,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vikpe/react-webpack-typescript-starter.git"
+    "url": "git+https://github.com/BingBlog/lowcode-starter"
   },
   "bugs": {
-    "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
+    "url": "https://github.com/BingBlog/lowcode-starter/issues"
   },
-  "homepage": "https://github.com/vikpe/react-webpack-typescript-starter",
+  "homepage": "https://github.com/BingBlog/lowcode-starter",
   "scripts": {
     "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
@@ -57,6 +57,8 @@
     "image-webpack-loader": "^8.1.0",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -71,5 +73,30 @@
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@alilc/lowcode-code-generator": "^1.0.4",
+    "@alilc/lowcode-plugin-code-editor": "^1.0.1",
+    "@alilc/lowcode-plugin-code-generator": "^1.0.4",
+    "@alilc/lowcode-plugin-components-pane": "^1.0.2",
+    "@alilc/lowcode-plugin-datasource-pane": "^1.0.3",
+    "@alilc/lowcode-plugin-inject": "^1.0.0",
+    "@alilc/lowcode-plugin-manual": "^1.0.3",
+    "@alilc/lowcode-plugin-schema": "^1.0.1",
+    "@alilc/lowcode-plugin-undo-redo": "^1.0.0",
+    "@alilc/lowcode-plugin-zh-en": "^1.0.0",
+    "@alilc/lowcode-react-renderer": "^1.0.0",
+    "@alilc/lowcode-setter-behavior": "^1.0.0",
+    "@alilc/lowcode-setter-title": "^1.0.2",
+    "antd": "^4.20.2",
+    "@formily/antd": "^2.1.4",
+    "@formily/core": "^2.1.4",
+    "@formily/react": "^2.1.4",
+    "@seada/antd-setters": "0.0.1-rc.6",
+    "@seada/antd-plugins": "0.0.1-rc.6"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
 }
