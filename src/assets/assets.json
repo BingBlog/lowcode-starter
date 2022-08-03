@@ -43,9 +43,9 @@
       "library": "Next"
     },
     {
-      "package": "@seada/formily-markup-materials",
+      "package": "lowcode-bi-materials",
       "version": "0.1.1",
-      "library": "SeadaFormilyMarkupMaterials",
+      "library": "LowcodeBiMaterials",
       "urls": [
         "https://unpkg.com/@seada/formily-markup-materials@latest/build/lowcode/view.js"
       ],
@@ -56,9 +56,9 @@
   ],
   "components": [
     {
-      "exportName": "SeadaFormilyMarkupMaterialsMeta",
+      "exportName": "LowcodeBiMaterialsMeta",
       "npm": {
-        "package": "@seada/formily-markup-materials",
+        "package": "lowcode-bi-materials",
         "version": "0.1.1"
       },
       "url": "https://unpkg.com/@seada/formily-markup-materials@latest/build/lowcode/meta.js",
