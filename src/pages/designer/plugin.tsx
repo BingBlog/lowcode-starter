@@ -12,6 +12,8 @@ import Inject, { injectAssets } from "@alilc/lowcode-plugin-inject";
 import ManualPlugin from "@alilc/lowcode-plugin-manual";
 import SchemaPlugin from "@alilc/lowcode-plugin-schema";
 import ZhEnPlugin from "@alilc/lowcode-plugin-zh-en";
+import DataSourcePanePlugin from '@alilc/lowcode-plugin-datasource-pane';
+
 import {
   // PluginCodeGenerator,
   PluginFormily,
@@ -168,6 +170,9 @@ export default async function registerPlugins() {
 
   // 注册中英文切换
   await plugins.register(ZhEnPlugin);
+
+  DataSourcePanePlugin.pluginName = 'DataSourcePane';
+  await plugins.register(DataSourcePanePlugin);
 
   // await plugins.register(PluginCodeGen)
   // await plugins.register(PluginCodeGenerator)
