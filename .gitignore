@@ -1,7 +1,31 @@
-.idea/
-dist/
-node_modules/
-src/**/*.jsx
+# dependencies
+**/node_modules
+
+# production
+/dist
+/.vscode
+
+# test
 tests/__coverage__/
 tests/**/*.jsx
+/coverage
+
+# misc
 .DS_Store
+npm-debug.log*
+yarn-error.log
+
+# visual studio code
+*bak
+.vscode
+.history
+*.log
+.temp/**
+.idea/
+
+# screenshot
+screenshot
+.firebase
+.eslintcache
+
+build
