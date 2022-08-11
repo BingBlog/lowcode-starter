@@ -100,6 +100,15 @@
     lodash "^4.17.21"
     typescript "^3.9.7"
 
+"@alilc/lowcode-datasource-fetch-handler@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@alilc/lowcode-datasource-fetch-handler/-/lowcode-datasource-fetch-handler-1.0.1.tgz#10f733d7fd1a7fa8124f95e833b1dd168a05e7f1"
+  integrity sha512-owOKPYRnlP4epRSwsF82xTq5TW1mMXNgx2rra0JnjQ8VVbXLslymqy9Mq7faTSSxD4yje0fpm8q81At1kSbGuw==
+  dependencies:
+    "@alilc/lowcode-datasource-types" "^1.0.1"
+    typescript "^3.9.7"
+    universal-request "^2.2.0"
+
 "@alilc/lowcode-datasource-types@^1.0.0", "@alilc/lowcode-datasource-types@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@alilc/lowcode-datasource-types/-/lowcode-datasource-types-1.0.1.tgz#7ba41b95b209056c1858b73837dd0b940a5b2faa"
@@ -2888,6 +2897,11 @@
   dependencies:
     "@typescript-eslint/types" "5.30.6"
     eslint-visitor-keys "^3.3.0"
+
+"@uni/env@^1.0.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@uni/env/-/env-1.1.0.tgz#ff04443a0320c235a8700e1bafa0c657f264e518"
+  integrity sha512-2GVgUzxIaO2vGElXEuc45+I7L6Jbw8inLDDFuC0K4htjKtPmYywKSE6oDhvmdAXb4GCOH8hmxECYtAh1rjsgoQ==
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -11788,6 +11802,20 @@ unique-string@^1.0.0:
   integrity sha512-ODgiYu03y5g76A1I9Gt0/chLCzQjvzDy7DsZGsLOE/1MrF6wriEskSncj1+/C58Xk/kPZDppSctDybCwOSaGAg==
   dependencies:
     crypto-random-string "^1.0.0"
+
+universal-env@^3.1.0:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/universal-env/-/universal-env-3.3.3.tgz#adb1bf6a3885d99efe78ab969f9dc54c39b3ebe4"
+  integrity sha512-4ZyITvWhtcurCEA66Cb7jcd4zpEiAAo91wSwbEscbiu033pIsC2yjgT8LYyasFgsst6jZHD1gtVoSyYcL8oH1Q==
+  dependencies:
+    "@uni/env" "^1.0.0"
+
+universal-request@^2.2.0:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/universal-request/-/universal-request-2.2.2.tgz#d0115bf137e219daa1b100d41dcaf0fe85af0bab"
+  integrity sha512-HqaK5vy9NdJh1nlCL930XczqP3C519ps82QGV2WJ/D/nRpfl1tuq3JkZPxu/6UFCQPYzi/N8Ik+vXDlQoDMNYA==
+  dependencies:
+    universal-env "^3.1.0"
 
 universalify@^0.1.0, universalify@^0.1.2:
   version "0.1.2"
