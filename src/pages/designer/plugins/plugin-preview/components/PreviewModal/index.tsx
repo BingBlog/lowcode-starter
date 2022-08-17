@@ -11,6 +11,7 @@ import {
 } from "@alilc/lowcode-utils";
 import { injectComponents } from "@alilc/lowcode-plugin-inject";
 import { getProjectSchema, getPagePackages } from "../../../../helper";
+import { createBiFetchHandler } from '../../../request-hadnlers/bi-fetch';
 
 const Renderer: FC = () => {
   const [data, setData] = useState<any>({});
@@ -63,7 +64,16 @@ const Renderer: FC = () => {
   }
 
   return (
-    <ReactRenderer schema={schema} components={components} appHelper={{}} />
+    <ReactRenderer
+      schema={schema}
+      components={components}
+      appHelper={{
+        requestHandlersMap: {
+          // 注入私有的请求处理工具
+          biFetch: createBiFetchHandler(),
+        },
+      }}
+    />
   );
 };
 

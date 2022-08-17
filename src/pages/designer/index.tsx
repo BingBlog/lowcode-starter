@@ -5,7 +5,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.less";
 import registerPlugins from "./plugin";
-import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler';
+// import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler';
+import { createBiFetchHandler } from './plugins/request-hadnlers/bi-fetch';
 
 const preference = new Map();
 
@@ -51,7 +52,7 @@ const Designer: React.FC = () => {
             "https://alifd.alicdn.com/npm/@alilc/lowcode-react-simulator-renderer@latest/dist/js/react-simulator-renderer.js",
           ],
           requestHandlersMap: {
-            biFetch: createFetchHandler(),
+            biFetch: createBiFetchHandler(),
           },
         });
 
