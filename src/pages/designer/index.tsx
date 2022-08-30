@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 import "./index.less";
 import registerPlugins from "./plugin";
 // import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler';
-import { createBiFetchHandler } from './plugins/request-hadnlers/bi-fetch';
+import { createBiFetchHandler } from './plugins/data-source-resolver/request-handler/bi-fetch';
 
 const preference = new Map();
 
