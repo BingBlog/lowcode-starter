@@ -2,7 +2,7 @@ import type { Context } from "../context";
 
 export type Middleware = (ctx: Context, next?: () => void) => void;
 
-export type createMiddlewareByHanlerConfig = (config: any) => Middleware;
+export type CreateMiddlewareByHanlerConfig = (config: any) => Middleware;
 
 export type MiddlewareMeta = {
     // 处理器的唯一标识

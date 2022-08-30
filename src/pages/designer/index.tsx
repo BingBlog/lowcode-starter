@@ -2,7 +2,8 @@ import { common, config, plugins, skeleton } from "@alilc/lowcode-engine";
 import { message, Spin } from "antd";
 import "antd/dist/antd.css";
 import React, { useEffect, useRef, useState } from "react";
-import { createRoot } from "react-dom/client";
+import * as ReactDOM from 'react-dom';
+// import { createRoot } from "react-dom/client";
 import "./index.less";
 import registerPlugins from "./plugin";
 // import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler';
@@ -75,5 +76,7 @@ const Designer: React.FC = () => {
 };
 
 const container = document.getElementById("root");
-const root = createRoot(container!);
-root.render(<Designer />);
+// const root = createRoot(container!);
+// root.render(<Designer />);
+
+ReactDOM.render(<Designer />, container);

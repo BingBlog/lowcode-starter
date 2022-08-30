@@ -33,7 +33,7 @@ import {
 } from "@seada/antd-setters";
 import { Button } from "antd";
 import React from "react";
-import assets from "../../assets/assets-bi-material.json";
+import assets from "../../assets/assets-category.json";
 import { getPageSchema, saveSchema } from "./helper";
 // import CodeEditor from '@alilc/lowcode-plugin-code-editor'
 import LowcodePluginPreview from "./plugins/plugin-preview/index";

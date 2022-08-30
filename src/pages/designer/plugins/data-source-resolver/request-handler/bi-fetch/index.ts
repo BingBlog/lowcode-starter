@@ -9,6 +9,7 @@ import { RequestOptions, AsObject } from 'universal-request/lib/types';
 export function createBiFetchHandler(config?: Record<string, unknown>) {
   // eslint-disable-next-line space-before-function-paren
   return async function(options: RuntimeOptionsConfig) {
+    console.log('createBiFetchHandler', options);
     // 初始化一个数据源处理器
     const resolver = new DataSourceResolver(options);
     // 启动数据源处理器
